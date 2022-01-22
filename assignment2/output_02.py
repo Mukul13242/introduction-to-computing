@@ -30,7 +30,7 @@ a>>2 :  14 	b>>2 : 0
 
 
 = RESTART: /Volumes/FINLE DATA/mukul important/python assignmwent/assi_02(21105071).py
-Question 4 method 2
+Question 4 
 Enter first number: 14
 Enter second number: 18
 Enter third number: 19
