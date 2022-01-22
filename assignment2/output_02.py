@@ -28,12 +28,6 @@ Question 3
 a<<2 :  224 	b<<2 : 40
 a>>2 :  14 	b>>2 : 0
 
-= RESTART: /Volumes/FINLE DATA/mukul important/python assignmwent/assi_02(21105071).py
-Question 4 method 1
-Enter first number: 14
-Enter second number: 15
-Enter third number: 18
-The largest number is 18.0
 
 = RESTART: /Volumes/FINLE DATA/mukul important/python assignmwent/assi_02(21105071).py
 Question 4 method 2
