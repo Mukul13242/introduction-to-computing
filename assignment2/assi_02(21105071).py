@@ -41,21 +41,8 @@ print("a>>2 : ", a >> 2, "\tb>>2 :", b >> 4)
 
 ######################################################################
 
-print('Question 4 method 1')
-num1 = float(input("Enter first number: "))
-num2 = float(input("Enter second number: "))
-num3 = float(input("Enter third number: "))
-if (num1 > num2) and (num1 > num3):
-   largest = num1
-elif (num2 > num1) and (num2 > num3):
-   largest = num2
-else:
-   largest = num3
-print("The largest number is",largest)
-
-#######################################################
     
-print('Question 4 method 2')
+print('Question 4')
 a=int(input("Enter first number: "))
 b=int(input("Enter second number: "))
 c=int(input("Enter third number: "))
