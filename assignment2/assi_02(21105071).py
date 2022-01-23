@@ -16,10 +16,10 @@ print(a.replace(" ", ""))
 
 ##################################################
 print('Question 2')
-name=str(input())
-SID=int(input())
-department=str(input())
-CGPA=float(input())
+name=str(input("Enter your name:"))
+SID=int(input("Enter your SID:"))
+department=str(input("Enter your department:"))
+CGPA=float(input("Enter your CGPA:"))
 print('''Hey, %s Here!
 My SID is %d
 I am from %s department and my CGPA is %f'''%(name,SID,department,CGPA))
