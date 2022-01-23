@@ -12,10 +12,10 @@ Pythonisacasesensitivelanguage
 
 = RESTART: /Volumes/FINLE DATA/mukul important/python assignmwent/assi_02(21105071).py
 Question 2
-mukul goyal
-21105071
-ECE
-10
+Enter your name:mukul goyal
+Enter your SID:21105071
+Enter your department:ECE
+ENter your CGPA:10
 Hey, mukul goyal Here!
 My SID is 21105071
 I am from ECE department and my CGPA is 10.000000
