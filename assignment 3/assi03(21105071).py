@@ -106,56 +106,68 @@ while len(string)-2*j>=1:
   print(" "*j+x)
   j=j+1
    ######################################QUESTION 6############################################################ 
-dict1 = {}
-while True:                                                                                                         #Loop for inputting values
-    name = input("Enter student name: ")
-    SID = int(input("Enter the SID of %s: " % name))
-    dict1[SID] = name
-    print("\nYou have entered %d value(s) till now" % len(dict1))
-    while True:
-        more_data = input("Do you want to enter more data? ")
-        if more_data in ("N","n","No","no","NO"):
-            more_data = 0
-            break
-        elif more_data in ("Y","y","Yes","yes","YES"):
-            more_data = 1
-            break
-        else:
-            print("\nPlease say yes or no")
-            continue
-    if more_data == 0:
-        break
-print("Q6(a)")
-print(" Student Details:")                                                                                      #Q6(a)
-for i in dict1:
-    print("The SID of \033[1m%s\033[0m is \033[1m%d\033[0m" % (dict1[i],i))
-dict2 = {}
-for sorted_value in sorted(dict1.values()):                                                                         #Sorting the dictionary using student names
-    for key,value in dict1.items():
-        if value == sorted_value:
-            dict2[key] = value
-print("Q6(b)")
-print(" Student Details (sorted with respect to names):")                                                       #Q6(b)
-for i in dict2:
-    print("The SID of \033[1m%s\033[0m is \033[1m%d\033[0m" % (dict2[i],i))
-dict3 = {}
-for sorted_key in sorted(dict1):                                                                                    #Sorting the dictionary using SIDs
-    for key,value in dict1.items():
-        if key == sorted_key:
-            dict3[key] = value
-print("Q6(c)")
-print("Student Details (sorted with respect to SIDs):")                                                        #Q6(c)
-for i in dict3:
-    print("The SID of \033[1m%s\033[0m is \033[1m%d\033[0m" % (dict3[i],i))
-print("Q6(d)")                                                                                           #Q6(d)
-while True:
-    search_SID = int(input("Enter the SID of the student: "))
-    if search_SID in dict1:
-        print("The name of student whose SID is %d is \033[1m%s\033[0m" % (search_SID,dict1[search_SID]))
-        break
+
+print("\nQ.6")
+#By default 1st run
+repeat="Y"
+#Intially empty dictionary
+dic={}
+dic2={}
+#List containing Y or N
+liste=["Y","y","n","N"]
+#Main code
+while repeat=="Y" or repeat=="y":
+    #Taking input name and sid
+    name = str(input("Enter student name:"))
+    sid = int(input("Enter student SID:"))
+    if sid<0:
+        print("\nError\nSID can't be negative\n")
     else:
-        print("The SID you entered isn't entered\nPlease enter a valid SID to be searched\nList of valid SIDs: %s\n" % list((dict1.keys())))
-        continue
+        # Updating dic with 'sid':'name'
+        dic.update({sid: name})
+        # updating dic 2 with 'name':'sid'(will be helpful while sorting)
+        dic2.update({name:sid})
+        # Asking if want to enter more input or not
+        repeat = str(input("Enter Y to continue or N to end:"))
+    if repeat=="N" or repeat=="n":
+        break
+    elif (not (repeat in liste)):
+        print("\nError\nPlease enter valid input['Y' or 'N']")
+        repeat=str(input("\nEnter Y to continue or N to end:"))
+
+# a
+#printing the dictionary
+print("\nQ.6(a)")
+print("The Dictionary containing {'SID':'Name'} is shown below")
+print(dic)
+# b
+#sorting according to name
+print("\nQ.6(b)")
+list_k=sorted(dic2)
+dic3={}
+for ele in list_k:
+    dic3.update({dic2.get(ele):ele})
+print("The Dictionary after sorting according to name:")
+print(dic3)
+
+# c
+#sorting according to SID
+print("\nQ.6(c)")
+sort_dic = sorted(dic)
+dic4 = {}
+for va in sort_dic:
+    dic4.update({va: dic.get(va)})
+print("The Dictionary after sorting according to SID:")
+print(dic4)
+# d
+print("\nQ.6(d)")
+# Taking input SID to be searched
+enter_sid = int(input("Enter SID to get name of student:"))
+# Searching for sid as key in dic
+output_name = str(dic.get(enter_sid))
+# printing name with key sid
+print(f"Name of student with SID {enter_sid} is {output_name}.")
+
 
    ######################################QUESTION 7############################################################ 
 print("\nQ.7")
