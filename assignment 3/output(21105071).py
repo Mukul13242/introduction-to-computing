@@ -38,40 +38,32 @@ ABCDEFGHIJK
      A
 >>> 
 == RESTART: /Users/mukulgoyal/Desktop/mukul/python assignment 3/que1_ass03.py ==
-Enter student name: mukul goyal
-Enter the SID of mukul goyal: 21105071
+Q.6
+Enter student name:mukul
+Enter student SID:21105071
+Enter Y to continue or N to end:Y
+Enter student name:sajjal 
+Enter student SID:21105090
+Enter Y to continue or N to end:Y
+Enter student name:prashant
+Enter student SID:21105072
+Enter Y to continue or N to end:N
 
-You have entered 1 value(s) till now
-Do you want to enter more data? y
-Enter student name: prashant jyoti
-Enter the SID of prashant jyoti: 21105072
+Q.6(a)
+The Dictionary containing {'SID':'Name'} is shown below
+{21105071: 'mukul', 21105090: 'sajjal ', 21105072: 'prashant'}
 
-You have entered 2 value(s) till now
-Do you want to enter more data? y
-Enter student name: sajjal
-Enter the SID of sajjal: 21105090
+Q.6(b)
+The Dictionary after sorting according to name:
+{21105071: 'mukul', 21105072: 'prashant', 21105090: 'sajjal '}
 
-You have entered 3 value(s) till now
-Do you want to enter more data? n
-Q6(a)
- Student Details:
-The SID of [1mmukul goyal[0m is [1m21105071[0m
-The SID of [1mprashant jyoti[0m is [1m21105072[0m
-The SID of [1msajjal[0m is [1m21105090[0m
-Q6(b)
- Student Details (sorted with respect to names):
-The SID of [1mmukul goyal[0m is [1m21105071[0m
-The SID of [1mprashant jyoti[0m is [1m21105072[0m
-The SID of [1msajjal[0m is [1m21105090[0m
-Q6(c)
-Student Details (sorted with respect to SIDs):
-The SID of [1mmukul goyal[0m is [1m21105071[0m
-The SID of [1mprashant jyoti[0m is [1m21105072[0m
-The SID of [1msajjal[0m is [1m21105090[0m
-Q6(d)
-Enter the SID of the student: 21105071
-The name of student whose SID is 21105071 is [1mmukul goyal[0m
->>> 
+Q.6(c)
+The Dictionary after sorting according to SID:
+{21105071: 'mukul', 21105072: 'prashant', 21105090: 'sajjal '}
+
+Q.6(d)
+Enter SID to get name of student:21105071
+Name of student with SID 21105071 is mukul.
 == RESTART: /Users/mukulgoyal/Desktop/mukul/python assignment 3/que1_ass03.py ==
 
 Q.7
